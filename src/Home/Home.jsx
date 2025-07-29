@@ -10,8 +10,8 @@ export default function Home() {
                     <br></br>
                     <br></br>
                     <button className="btn btn-lg"
-                        style={{ backgroundColor: '#C82716', color: 'white' }}>
-                        View Products
+                        style={{ backgroundColor: '#C82716', color: 'white'}}>
+                        View Our Menu
                     </button>
                 </div>
             </div>
