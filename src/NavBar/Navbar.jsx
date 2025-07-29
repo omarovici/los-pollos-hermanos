@@ -35,12 +35,6 @@ export default function Navbar() {
                             </a>
                         </li>
                     </ul>
-                    {/* <div className="d-flex align-items-center">
-                        <a className="link-secondary me-3" href="#" >
-                            <i className="fas fa-shopping-cart" />
-                            <span className="badge rounded-pill badge-notification bg-danger">1</span>
-                        </a>
-                    </div> */}
                 </div>
             </nav>
         </>

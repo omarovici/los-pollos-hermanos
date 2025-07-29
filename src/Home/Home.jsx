@@ -9,15 +9,8 @@ export default function Home() {
                     <h2 className="display-7 mb-3" style={{ color: '#C82716' }}>Where something delicious is always cooking</h2>
                     <br></br>
                     <br></br>
-                    {/* <p className="lead" style={{color: '#C82716'}}>
-          This is a simple React application built with Vite, Bootstrap, and Fake Store API.
-        </p>
-        <hr className="my-4" />
-        <p className="mb-4" style={{color: '#C82716'}}>
-          Browse our collection of products and learn more about React development.
-        </p> */}
-                    <button className="btn btn-lg" 
-                    style={{ backgroundColor: '#C82716', color: 'white'}}>
+                    <button className="btn btn-lg"
+                        style={{ backgroundColor: '#C82716', color: 'white' }}>
                         View Products
                     </button>
                 </div>
