@@ -7,7 +7,7 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#00226b' }}>
                 <div className="container-fluid">
                     <a className="navbar-brand mt-2 mt-lg-0" href="#">
-                        <img src={lphLogo} height={150} alt="Los Pollos Hermanos Logo" loading="lazy" style={{marginLeft:'50px'}}/>
+                        <img src={lphLogo} height={150} alt="Los Pollos Hermanos Logo" loading="lazy" style={{ marginLeft: '50px' }} />
                     </a>
                     <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex flex-row" style={{ gap: '100px' }}>
                         <li className="nav-item">
@@ -15,7 +15,7 @@ export default function Navbar() {
                                 style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
                                 onMouseEnter={(e) => e.target.style.color = '#fcc000'}
                                 onMouseLeave={(e) => e.target.style.color = 'white'}>
-                                Dashboard
+                                Home
                             </a>
                         </li>
                         <li className="nav-item">
@@ -23,7 +23,7 @@ export default function Navbar() {
                                 style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
                                 onMouseEnter={(e) => e.target.style.color = '#fcc000'}
                                 onMouseLeave={(e) => e.target.style.color = 'white'}>
-                                Team
+                                Products
                             </a>
                         </li>
                         <li className="nav-item">
@@ -31,7 +31,7 @@ export default function Navbar() {
                                 style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
                                 onMouseEnter={(e) => e.target.style.color = '#fcc000'}
                                 onMouseLeave={(e) => e.target.style.color = 'white'}>
-                                Projects
+                                About Us
                             </a>
                         </li>
                     </ul>
