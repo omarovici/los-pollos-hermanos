@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Loader from '../Loader/Loader';
+import styles from './Menu.module.css';
 function generatePrice() {
     return (Math.random() * (25 - 8) + 8).toFixed(2);
 }
@@ -23,7 +24,7 @@ export default function Menu() {
             }));
             setRecipesArray(recipesWithPricing);
         } catch (error) {
-            console.error("Error fetching pizza recipes:", error);
+            console.error("Error fetching chicken recipes:", error);
         }
     }
 
@@ -140,25 +141,7 @@ function Item({ recipe }) {
                                 ${recipe.price}
                             </span>
                             <button
-                                className="btn"
-                                style={{
-                                    backgroundColor: '#C82716',
-                                    color: '#FFFFF0',
-                                    border: 'none',
-                                    borderRadius: '8px',
-                                    padding: '0.625rem 1.25rem',
-                                    fontSize: '0.875rem',
-                                    fontWeight: '500',
-                                    transition: 'background-color 0.3s ease'
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.target.style.backgroundColor = '#FCCC00';
-                                    e.target.style.color = 'black';
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.target.style.backgroundColor = '#C82716';
-                                    e.target.style.color = '#FFFFF0';
-                                }}
+                                className={`btn ${styles.addToCartBtn}`}
                                 onClick={(e) => {
                                     e.preventDefault();
                                     e.stopPropagation();

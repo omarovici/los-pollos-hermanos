@@ -1,6 +1,7 @@
 .navbar {
     background-color: #00226b !important;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
+    position: relative;
 }
 
 .navbarContainer {
@@ -8,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .navbarBrand {
@@ -17,13 +18,14 @@
 }
 
 .logo {
-    height: 80px;
+    height: 60px;
     width: auto;
     transition: height 0.3s ease;
+    margin-left: 0;
 }
 
 .navList {
-    display: flex;
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -50,12 +52,13 @@
 }
 
 .spacer {
+    display: none;
     width: 80px;
     flex-shrink: 0;
 }
 
 .mobileToggle {
-    display: none;
+    display: block;
     background: none;
     border: none;
     color: white;
@@ -95,10 +98,10 @@
 .mobileNavLink {
     color: white !important;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -108,40 +111,7 @@
     background-color: rgba(252, 192, 0, 0.1);
 }
 
-@media (min-width: 320px) {
-    .navbar {
-        position: relative;
-        padding: 0.3rem 0;
-    }
-    
-    .navbarContainer {
-        padding: 0 0.5rem;
-    }
-    
-    .logo {
-        height: 60px;
-        margin-left: 0;
-    }
-    
-    .navList {
-        display: none;
-    }
-    
-    .spacer {
-        display: none;
-    }
-    
-    .mobileToggle {
-        display: block;
-    }
-    
-    .mobileNavLink {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-    }
-}
-
-@media (min-width: 480px) {
+@media screen and (min-width: 467px) {
     .navbarContainer {
         padding: 0 1rem;
     }
@@ -157,7 +127,18 @@
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 640px) {
+    .navbar {
+        padding: 0.4rem 0;
+    }
+    
+    .logo {
+        height: 80px;
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .navbar {
         padding: 0.5rem 0;
     }
@@ -194,7 +175,7 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
     .navbar {
         padding: 0.8rem 0;
     }
@@ -222,7 +203,7 @@
     }
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1280px) {
     .navbar {
         padding: 1rem 0;
     }
@@ -250,7 +231,7 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media screen and (min-width: 1536px) {
     .logo {
         height: 160px;
         margin-left: 5rem;

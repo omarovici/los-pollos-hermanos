@@ -3,7 +3,7 @@ import React from 'react'
 export default function NotFound() {
     return (
         <>
-            <div className="jumbotron p-4 p-md-5 " style={{ backgroundColor: '#FCCC00'}}>
+            <div className="jumbotron p-4 p-md-5 " style={{ backgroundColor: '#FCCC00', minHeight: '80vh' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
                     <h1 className="display-4 mb-3" style={{ color: '#C82716' }}>There is no page here!</h1>
                     <blockquote>

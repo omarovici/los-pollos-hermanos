@@ -19,7 +19,7 @@ export default function Item() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            minHeight: '70vh'
+            minHeight: '80vh'
         }} className="item-container">
             <div className="container-fluid px-2 px-md-3 px-lg-4">
                 <div className="row justify-content-center ">
