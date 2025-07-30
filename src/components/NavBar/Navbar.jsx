@@ -1,42 +1,91 @@
-import React from 'react'
+import React, { useState } from 'react'
 import lphLogo from '../../assets/lph-logos.png'
-import { MDBBadge, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBIcon } from 'mdb-react-ui-kit';
+import styles from './Navbar.module.css';
 
 export default function Navbar() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
         <>
-            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#00226b' }}>
-                <div className="container-fluid d-flex justify-content-between align-items-center">
-                    <a className="navbar-brand mt-2 mt-lg-0" href="/">
-                        <img src={lphLogo} height={150} alt="Los Pollos Hermanos Logo" loading="lazy" style={{ marginLeft: '50px' }} />
+            <nav className={styles.navbar}>
+                <div className={styles.navbarContainer}>
+                    <a className={styles.navbarBrand} href="/">
+                        <img
+                            src={lphLogo}
+                            alt="Los Pollos Hermanos Logo"
+                            loading="lazy"
+                            className={styles.logo}
+                        />
                     </a>
-                    <ul className="navbar-nav mb-2 mb-lg-0 d-flex flex-row mx-auto" style={{ gap: '100px' }}>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/"
-                                style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
-                                onMouseEnter={(e) => e.target.style.color = '#fcc000'}
-                                onMouseLeave={(e) => e.target.style.color = 'white'}>
+
+                    {/* Desktop Navigation */}
+                    <ul className={styles.navList}>
+                        <li className={styles.navItem}>
+                            <a className={styles.navLink} href="/">
                                 Home
                             </a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/menu"
-                                style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
-                                onMouseEnter={(e) => e.target.style.color = '#fcc000'}
-                                onMouseLeave={(e) => e.target.style.color = 'white'}>
+                        <li className={styles.navItem}>
+                            <a className={styles.navLink} href="/menu">
                                 Menu
                             </a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/about"
-                                style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
-                                onMouseEnter={(e) => e.target.style.color = '#fcc000'}
-                                onMouseLeave={(e) => e.target.style.color = 'white'}>
+                        <li className={styles.navItem}>
+                            <a className={styles.navLink} href="/about">
                                 About Us
                             </a>
                         </li>
                     </ul>
-                    <div style={{ width: '170px' }}></div> 
+
+                    {/* Mobile Menu Toggle */}
+                    <button
+                        className={styles.mobileToggle}
+                        onClick={toggleMobileMenu}
+                        aria-label="Toggle mobile menu"
+                    >
+                        <MDBIcon fas icon={isMobileMenuOpen ? "times" : "bars"} />
+                    </button>
+
+                    {/* Spacer for desktop layout */}
+                    <div className={styles.spacer}></div>
+                </div>
+
+                {/* Mobile Navigation Menu */}
+                <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+                    <ul className={styles.mobileNavList}>
+                        <li className={styles.mobileNavItem}>
+                            <a
+                                className={styles.mobileNavLink}
+                                href="/"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li className={styles.mobileNavItem}>
+                            <a
+                                className={styles.mobileNavLink}
+                                href="/menu"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Menu
+                            </a>
+                        </li>
+                        <li className={styles.mobileNavItem}>
+                            <a
+                                className={styles.mobileNavLink}
+                                href="/about"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </>

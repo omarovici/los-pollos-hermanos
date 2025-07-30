@@ -1,0 +1,281 @@
+.navbar {
+    background-color: #00226b !important;
+    padding: 0.5rem 0;
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.navbarBrand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navItem {
+    margin: 0;
+}
+
+.navLink {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.navLink:hover {
+    color: #fcc000 !important;
+}
+
+.spacer {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.mobileToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobileMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00226b;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.mobileMenuOpen {
+    display: block;
+}
+
+.mobileNavList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    gap: 0;
+}
+
+.mobileNavItem {
+    margin: 0;
+}
+
+.mobileNavLink {
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobileNavLink:hover {
+    color: #fcc000 !important;
+    background-color: rgba(252, 192, 0, 0.1);
+}
+
+@media (min-width: 320px) {
+    .navbar {
+        position: relative;
+        padding: 0.3rem 0;
+    }
+    
+    .navbarContainer {
+        padding: 0 0.5rem;
+    }
+    
+    .logo {
+        height: 60px;
+        margin-left: 0;
+    }
+    
+    .navList {
+        display: none;
+    }
+    
+    .spacer {
+        display: none;
+    }
+    
+    .mobileToggle {
+        display: block;
+    }
+    
+    .mobileNavLink {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .navbarContainer {
+        padding: 0 1rem;
+    }
+    
+    .logo {
+        height: 70px;
+        margin-left: 1rem;
+    }
+    
+    .mobileNavLink {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .navbarContainer {
+        padding: 0 1.5rem;
+    }
+    
+    .logo {
+        height: 100px;
+        margin-left: 2rem;
+    }
+    
+    .navList {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .navLink {
+        font-size: 1.1rem;
+    }
+    
+    .spacer {
+        display: block;
+        width: 100px;
+    }
+    
+    .mobileToggle {
+        display: none;
+    }
+    
+    .mobileMenu {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .navbar {
+        padding: 0.8rem 0;
+    }
+    
+    .navbarContainer {
+        padding: 0 2rem;
+    }
+    
+    .logo {
+        height: 130px;
+        margin-left: 3rem;
+    }
+    
+    .navList {
+        gap: 3rem;
+    }
+    
+    .navLink {
+        font-size: 1.4rem;
+        padding: 0.7rem 1.2rem;
+    }
+    
+    .spacer {
+        width: 140px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .navbar {
+        padding: 1rem 0;
+    }
+    
+    .navbarContainer {
+        padding: 0 3rem;
+    }
+    
+    .logo {
+        height: 150px;
+        margin-left: 4rem;
+    }
+    
+    .navList {
+        gap: 4rem;
+    }
+    
+    .navLink {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .spacer {
+        width: 170px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .logo {
+        height: 160px;
+        margin-left: 5rem;
+    }
+    
+    .navList {
+        gap: 5rem;
+    }
+    
+    .navLink {
+        font-size: 1.8rem;
+    }
+    
+    .spacer {
+        width: 200px;
+    }
+}
+
+.navLink:focus,
+.mobileNavLink:focus {
+    outline: 2px solid #fcc000;
+    outline-offset: 2px;
+}
+
+.mobileToggle:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
