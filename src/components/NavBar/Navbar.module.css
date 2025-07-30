@@ -250,12 +250,6 @@
     }
 }
 
-.navLink:focus,
-.mobileNavLink:focus {
-    outline: 2px solid #fcc000;
-    outline-offset: 2px;
-}
-
 .mobileToggle:focus {
     outline: 2px solid white;
     outline-offset: 2px;
