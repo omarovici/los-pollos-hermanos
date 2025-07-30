@@ -11,6 +11,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import NotFound from './components/NotFound/NotFound'
 import AboutUs from './components/AboutUs/AboutUs'
 import Menu from './components/Menu/Menu';
+import Item from './components/Item/Item';
 
 function Layout() {
   return (
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/menu",
         element: <Menu />
+      },
+      {
+        path: "/item/:id",
+        element: <Item />
       },
       {
         path: "/about",
