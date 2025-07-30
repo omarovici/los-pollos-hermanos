@@ -7,15 +7,49 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import Home from './Home/Home'
 import Navbar from './NavBar/Navbar'
 import Footer from './Footer/Footer'
+import Video from './Video/Video'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
+import NotFound from './NotFound/NotFound'
+import AboutUs from './AboutUs/AboutUs'
 
-function App() {
+function Layout() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Outlet />
       <Footer />
     </>
   )
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/menu",
+        element: <div>Menu Page</div>
+      },
+      {
+        path: "/about",
+        element: <AboutUs />
+      },
+      {
+        path: "*",
+        element: <NotFound />
+      }
+    ]
+  }
+])
+
+function App() {
+  return <RouterProvider router={router} />
 }
 
 export default App
