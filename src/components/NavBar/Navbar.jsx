@@ -1,5 +1,5 @@
 import React from 'react'
-import lphLogo from '../assets/lph-logos.png'
+import lphLogo from '../../assets/lph-logos.png'
 import { MDBBadge, MDBIcon } from 'mdb-react-ui-kit';
 
 export default function Navbar() {

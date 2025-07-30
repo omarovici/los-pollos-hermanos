@@ -4,12 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import Home from './Home/Home'
-import Navbar from './NavBar/Navbar'
-import Footer from './Footer/Footer'
+import Home from './components/Home/Home'
+import Navbar from './components/NavBar/Navbar'
+import Footer from './components/Footer/Footer'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
-import NotFound from './NotFound/NotFound'
-import AboutUs from './AboutUs/AboutUs'
+import NotFound from './components/NotFound/NotFound'
+import AboutUs from './components/AboutUs/AboutUs'
+import Menu from './components/Menu/Menu';
 
 function Layout() {
   return (
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/menu",
-        element: <div>Menu Page</div>
+        element: <Menu />
       },
       {
         path: "/about",
