@@ -51,7 +51,9 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+], {
+  basename: "/los-pollos-hermanos"
+})
 
 function App() {
   return <RouterProvider router={router} />
