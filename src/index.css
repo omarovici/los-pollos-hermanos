@@ -5,3 +5,30 @@ body {
 * {
   font-family: 'Chelsea Market', cursive;
 }
+.loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  background: #FFFFF0;
+  box-shadow: -24px 0 #FFFFF0, 24px 0 #FFFFF0;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFFFF0;
+    box-shadow: -24px 0 #C82716, 24px 0 #FFFFF0;
+  }
+  66% {
+    background: #C82716;
+    box-shadow: -24px 0 #FFFFF0, 24px 0 #FFFFF0;
+  }
+  100% {
+    background: #FFFFF0;
+    box-shadow: -24px 0 #FFFFF0, 24px 0 #C82716;
+  }
+}
