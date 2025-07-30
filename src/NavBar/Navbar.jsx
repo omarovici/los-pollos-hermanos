@@ -23,7 +23,7 @@ export default function Navbar() {
                                 style={{ fontSize: '30px', color: 'white', transition: 'color 0.3s ease' }}
                                 onMouseEnter={(e) => e.target.style.color = '#fcc000'}
                                 onMouseLeave={(e) => e.target.style.color = 'white'}>
-                                Products
+                                Menu
                             </a>
                         </li>
                         <li className="nav-item">
