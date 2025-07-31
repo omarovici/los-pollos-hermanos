@@ -91,6 +91,18 @@ The `src/components` directory contains reusable UI components that make up the 
 
 Each component is organized in its own folder with related styles and logic for maintainability.
 
+## Screenshots
+
+| Home Page | Menu Page |
+|-----------|-----------|
+| ![Home](./assets/screenshots/Home.jpg) | ![Menu](./assets/screenshots/Menu.jpg) |
+
+| About Us Page | Item Page |
+|---------------|-----------|
+| ![About Us](./assets/screenshots/About.jpg) | ![Item](./assets/screenshots/Item.jpg) |
+
+<!-- Place your screenshots in ./assets/screenshots/ and update paths if needed -->
+
 ## License
 MIT
 
