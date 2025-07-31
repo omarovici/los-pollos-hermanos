@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Loader from '../Loader/Loader';
 import styles from './Menu.module.css';
 function generatePrice() {
-    return (Math.random() * (25 - 8) + 8).toFixed(2);
+    return (Math.random() * (25 - 8) + 8).toFixed(0);
 }
 
 function generateRating() {
@@ -145,7 +145,6 @@ function Item({ recipe }) {
                                 onClick={(e) => {
                                     e.preventDefault();
                                     e.stopPropagation();
-                                    alert(`Added ${recipe.title} to cart for $${recipe.price}!`);
                                 }}
                             >
                                 Add to cart

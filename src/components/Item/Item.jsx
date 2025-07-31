@@ -58,6 +58,16 @@ export default function Item() {
                                                     borderRadius: '20px',
                                                     fontSize: '0.8rem',
                                                     padding: '0.4rem 0.8rem'
+                                                    // hover effects
+
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.backgroundColor = '#FCCC00';
+                                                    e.target.style.color = 'black';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.backgroundColor = '#C82716';
+                                                    e.target.style.color = '#FFFFF0';
                                                 }}
                                             >
                                                 ← Back to Menu
