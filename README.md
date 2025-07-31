@@ -95,11 +95,11 @@ Each component is organized in its own folder with related styles and logic for 
 
 | Home Page | Menu Page |
 |-----------|-----------|
-| ![Home](./assets/screenshots/Home.jpg) | ![Menu](./assets/screenshots/Menu.jpg) |
+| ![Home](./src/assets/screenshots/home.png) | ![Menu](./src/assets/screenshots/menu.png) |
 
 | About Us Page | Item Page |
 |---------------|-----------|
-| ![About Us](./assets/screenshots/About.jpg) | ![Item](./assets/screenshots/Item.jpg) |
+| ![About Us](./src/assets/screenshots/aboutus.png) | ![Item](./src/assets/screenshots/item.png) |
 
 <!-- Place your screenshots in ./assets/screenshots/ and update paths if needed -->
 
