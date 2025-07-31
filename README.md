@@ -90,16 +90,19 @@ The `src/components` directory contains reusable UI components that make up the 
 - **NotFound**: 404 page for unmatched routes.
 
 Each component is organized in its own folder with related styles and logic for maintainability.
-
 ## Screenshots
 
-| Home Page | Menu Page |
-|-----------|-----------|
-| ![Home](./src/assets/screenshots/home.png) | ![Menu](./src/assets/screenshots/menu.png) |
+### Home Page
+![Home](./src/assets/screenshots/home.png)
 
-| About Us Page | Item Page |
-|---------------|-----------|
-| ![About Us](./src/assets/screenshots/aboutus.png) | ![Item](./src/assets/screenshots/item.png) |
+### Menu Page
+![Menu](./src/assets/screenshots/menu.png)
+
+### About Us Page
+![About Us](./src/assets/screenshots/aboutus.png)
+
+### Item Page
+![Item](./src/assets/screenshots/item.png)
 
 <!-- Place your screenshots in ./assets/screenshots/ and update paths if needed -->
 
