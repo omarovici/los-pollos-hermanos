@@ -3,11 +3,11 @@
 }
 
 .item-title {
-    font-size: 20.8px;
+    font-size: 1.3rem;
 }
 
 .item-price {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .item-stars {
@@ -16,7 +16,7 @@
 }
 
 .item-padding {
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -25,11 +25,11 @@
     }
 
     .item-title {
-        font-size: 25.6px;
+        font-size: 1.6rem;
     }
 
     .item-price {
-        font-size: 36.8px;
+        font-size: 2.3rem;
     }
 
     .item-stars {
@@ -38,7 +38,7 @@
     }
 
     .item-padding {
-        padding: 32px;
+        padding: 2rem;
     }
 }
 
@@ -48,11 +48,11 @@
     }
 
     .item-title {
-        font-size: 28.8px;
+        font-size: 1.8rem;
     }
 
     .item-price {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .item-stars {
@@ -61,7 +61,7 @@
     }
 
     .item-padding {
-        padding: 40px;
+        padding: 2.5rem;
     }
 }
 
@@ -71,11 +71,11 @@
     }
 
     .item-title {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .item-price {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .item-stars {
@@ -84,24 +84,24 @@
     }
 
     .item-padding {
-        padding: 48px;
+        padding: 3rem;
     }
 }
 
 @media (max-width: 767px) {
     .item-container {
-        padding: 8px;
+        padding: 0.5rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
     .item-container {
-        padding: 16px;
+        padding: 1rem;
     }
 }
 
 @media (min-width: 1280px) {
     .item-container {
-        padding: 24px;
+        padding: 1.5rem;
     }
 }
