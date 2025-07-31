@@ -1,6 +1,6 @@
 .navbar {
     background-color: #00226b !important;
-    padding: 0.3rem 0;
+    padding: 4.8px 0;
     position: relative;
 }
 
@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 0.5rem;
+    padding: 0 8px;
 }
 
 .navbarBrand {
@@ -29,7 +29,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2rem;
+    gap: 32px;
     align-items: center;
 }
 
@@ -40,10 +40,10 @@
 .navLink {
     color: white !important;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     font-weight: 500;
     transition: color 0.3s ease;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border-radius: 4px;
 }
 
@@ -62,9 +62,9 @@
     background: none;
     border: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 24px;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 8px;
 }
 
 .mobileMenu {
@@ -87,7 +87,7 @@
     flex-direction: column;
     list-style: none;
     margin: 0;
-    padding: 1rem 0;
+    padding: 16px 0;
     gap: 0;
 }
 
@@ -98,10 +98,10 @@
 .mobileNavLink {
     color: white !important;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 0.8rem 1.5rem;
+    padding: 12.8px 24px;
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -113,63 +113,63 @@
 
 @media screen and (min-width: 467px) {
     .navbarContainer {
-        padding: 0 1rem;
+        padding: 0 16px;
     }
-    
+
     .logo {
         height: 70px;
-        margin-left: 1rem;
+        margin-left: 16px;
     }
-    
+
     .mobileNavLink {
-        font-size: 1.1rem;
-        padding: 1rem 2rem;
+        font-size: 17.6px;
+        padding: 16px 32px;
     }
 }
 
 @media screen and (min-width: 640px) {
     .navbar {
-        padding: 0.4rem 0;
+        padding: 6.4px 0;
     }
-    
+
     .logo {
         height: 80px;
-        margin-left: 1.5rem;
+        margin-left: 24px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .navbar {
-        padding: 0.5rem 0;
+        padding: 8px 0;
     }
-    
+
     .navbarContainer {
-        padding: 0 1.5rem;
+        padding: 0 24px;
     }
-    
+
     .logo {
         height: 100px;
-        margin-left: 2rem;
+        margin-left: 32px;
     }
-    
+
     .navList {
         display: flex;
-        gap: 1.5rem;
+        gap: 24px;
     }
-    
+
     .navLink {
-        font-size: 1.1rem;
+        font-size: 17.6px;
     }
-    
+
     .spacer {
         display: block;
         width: 100px;
     }
-    
+
     .mobileToggle {
         display: none;
     }
-    
+
     .mobileMenu {
         display: none !important;
     }
@@ -177,27 +177,27 @@
 
 @media screen and (min-width: 1024px) {
     .navbar {
-        padding: 0.8rem 0;
+        padding: 12.8px 0;
     }
-    
+
     .navbarContainer {
-        padding: 0 2rem;
+        padding: 0 32px;
     }
-    
+
     .logo {
         height: 130px;
-        margin-left: 3rem;
+        margin-left: 48px;
     }
-    
+
     .navList {
-        gap: 3rem;
+        gap: 48px;
     }
-    
+
     .navLink {
-        font-size: 1.4rem;
-        padding: 0.7rem 1.2rem;
+        font-size: 22.4px;
+        padding: 11.2px 19.2px;
     }
-    
+
     .spacer {
         width: 140px;
     }
@@ -205,27 +205,27 @@
 
 @media screen and (min-width: 1280px) {
     .navbar {
-        padding: 1rem 0;
+        padding: 16px 0;
     }
-    
+
     .navbarContainer {
-        padding: 0 3rem;
+        padding: 0 48px;
     }
-    
+
     .logo {
         height: 150px;
-        margin-left: 4rem;
+        margin-left: 64px;
     }
-    
+
     .navList {
-        gap: 4rem;
+        gap: 64px;
     }
-    
+
     .navLink {
-        font-size: 1.6rem;
-        padding: 0.8rem 1.5rem;
+        font-size: 25.6px;
+        padding: 12.8px 24px;
     }
-    
+
     .spacer {
         width: 170px;
     }
@@ -234,17 +234,17 @@
 @media screen and (min-width: 1536px) {
     .logo {
         height: 160px;
-        margin-left: 5rem;
+        margin-left: 80px;
     }
-    
+
     .navList {
-        gap: 5rem;
+        gap: 80px;
     }
-    
+
     .navLink {
-        font-size: 1.8rem;
+        font-size: 28.8px;
     }
-    
+
     .spacer {
         width: 200px;
     }
